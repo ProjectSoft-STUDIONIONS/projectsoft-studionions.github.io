@@ -141,6 +141,7 @@ module.exports = (grunt) => {
 	});
 
 	grunt.registerTask('default', [
+		"clean",
 		"copy",
 		"ttf2woff2",
 		"less",
@@ -148,6 +149,5 @@ module.exports = (grunt) => {
 		"concat",
 		"uglify",
 		"pug",
-		"clean"
 	]);
 }
