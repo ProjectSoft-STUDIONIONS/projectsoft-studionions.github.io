@@ -22,9 +22,11 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 					|ProjectSoft GitHub Pages
 		footer
 			.wrapper
-				p.text-left
-					|Left
-				p.text-center
-					|Center
-				p.text-right
-					|Right
+				span.copyright
+					|Copyright &copy; 2008 - all right reserved
+				span.developer
+					|Developed by:  
+					a(href="https://github.com/" + userRepo + "/" target="_blank")
+						|ProjectSoft
+		script(src="https://" + repo + "/js/plugins.js?hash=" + hash type="text/javascript")
+		script(src="https://" + repo + "/js/main.js?hash=" + hash type="text/javascript")

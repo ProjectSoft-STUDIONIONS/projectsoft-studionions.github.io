@@ -46,6 +46,37 @@ module.exports = (grunt) => {
 				}
 			}
 		},
+		concat: {
+			options: {
+				separator: ';',
+			},
+			page: {
+				src: [
+					'bower_components/jquery/dist/jquery.js',
+					'bower_components/fancybox/dist/jquery.fancybox.js',
+				],
+				dest: 'test/js/plugins.js',
+			},
+		},
+		uglify : {
+			options: {
+				ASCIIOnly: true,
+				compress: false,
+				//beautify: true
+			},
+			page: {
+				files: {
+					'docs/js/plugins.js': [
+						'test/js/plugins.js'
+					],
+					'docs/js/main.js': [
+						'bower_components/jquery/dist/jquery.js',
+						'bower_components/fancybox/dist/jquery.fancybox.js',
+						'src/js/main.js'
+					]
+				},
+			},
+		},
 		pug: {
 			page: {
 				options: {
@@ -69,6 +100,8 @@ module.exports = (grunt) => {
 	grunt.registerTask('default', [
 		"less",
 		"cssmin",
+		"concat",
+		"uglify",
 		"pug"
 	]);
 }
