@@ -7,5 +7,7 @@
 /stylesheets
 /*.html
 /*-lock.json
+/docs/*
+/docs/**/*.*
 
 *.sublime-workspace
