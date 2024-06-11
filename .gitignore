@@ -11,3 +11,5 @@
 /docs/**/*.*
 
 *.sublime-workspace
+
+!/docs/.gitkeep
