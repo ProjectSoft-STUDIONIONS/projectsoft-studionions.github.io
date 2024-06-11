@@ -2,7 +2,7 @@
 article.news-container-item
 	h4.title
 		a(href="https://" + repo + "/" + item.repo + "/")= item.title
-	p.date.text-right
+	p.date
 		a(href="https://github.com/" + userName + "/" + item.repo + "/releases/latest" target="_blank")
 			img(src="https://img.shields.io/github/v/release/" + userName + "/" + item.repo + "?style=for-the-badge&color=%23007ec6&" alt="Github Latest " + item.repo + "")
 		a(href="https://github.com/" + userName + "/" + item.repo + "/" target="_blank")
