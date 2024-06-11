@@ -4,11 +4,12 @@ module.exports = (grunt) => {
 
 	const running = process.env.DEVELOPMENT == "1" ? false : true,
 		pkg = grunt.file.readJSON('package.json'),
+		dataPug = grunt.file.readJSON('src/pug/items.json'),
 		path = require('path'),
 		uniqid = function () {
 			let result = URL.createObjectURL(new Blob([])).slice(-36).replace(/-/g, '');
 			return result;
-		};;
+		};
 
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
@@ -98,13 +99,14 @@ module.exports = (grunt) => {
 		pug: {
 			page: {
 				options: {
-					pretty: '',// '\t',
-					separator: '',// '\n'
+					pretty: '\t',
+					separator: '\n',
 					data: function(dest, src) {
 						return {
 							"hash": uniqid(),
 							"repo": "projectsoft-studionions.github.io",
 							"userName": "ProjectSoft-STUDIONIONS",
+							"items": dataPug
 						}
 					},
 				},
