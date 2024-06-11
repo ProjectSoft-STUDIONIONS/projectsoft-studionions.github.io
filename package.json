@@ -9,6 +9,7 @@
   "author": "ProjectSoft <projectsoft2009@yandex.ru>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "grunt": "^1.6.1"
   }
 }
