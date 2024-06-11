@@ -80,7 +80,7 @@ module.exports = (grunt) => {
 			docs: {
 				files: {
 					'docs/css/main.css': [
-						'bower_components/fancybox/dist/jquery.fancybox.css',
+						//'bower_components/fancybox/dist/jquery.fancybox.css',
 						'test/css/page-main.css'
 					]
 				}
@@ -92,8 +92,8 @@ module.exports = (grunt) => {
 			},
 			docs: {
 				src: [
-					'bower_components/jquery/dist/jquery.js',
-					'bower_components/fancybox/dist/jquery.fancybox.js',
+					//'bower_components/jquery/dist/jquery.js',
+					//'bower_components/fancybox/dist/jquery.fancybox.js',
 				],
 				dest: 'test/js/plugins.js',
 			},
@@ -106,12 +106,10 @@ module.exports = (grunt) => {
 			},
 			docs: {
 				files: {
-					'docs/js/plugins.js': [
+					/*'docs/js/plugins.js': [
 						'test/js/plugins.js'
-					],
+					],*/
 					'docs/js/main.js': [
-						'bower_components/jquery/dist/jquery.js',
-						'bower_components/fancybox/dist/jquery.fancybox.js',
 						'src/js/main.js'
 					]
 				},
@@ -146,7 +144,7 @@ module.exports = (grunt) => {
 		"ttf2woff2",
 		"less",
 		"cssmin",
-		"concat",
+		//"concat",
 		"uglify",
 		"pug",
 	]);
