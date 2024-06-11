@@ -125,7 +125,9 @@ module.exports = (grunt) => {
 							"hash": uniqid(),
 							"repo": "projectsoft-studionions.github.io",
 							"userName": "ProjectSoft-STUDIONIONS",
-							"items": dataPug
+							"items": dataPug,
+							"title": "ProjectSoft | GitHub Pages",
+							"nickname": "ProjectSoft"
 						}
 					},
 				},

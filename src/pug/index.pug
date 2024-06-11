@@ -5,7 +5,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 		meta(http-equiv="X-UA-Compatible" content="IE=EmulateIE9")
 		meta(charset="utf-8")
 		base(href="https://" + repo + "/")
-		title ProjectSoft | GitHub Pages
+		title= title
 		link(rel="shortcut icon" type="image/x-icon" href="https://" + repo + "/favicon.ico")
 		link(rel="icon" type="image/png" href="https://" + repo + "/favicon.png")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -19,8 +19,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 						img(src="https://" + repo + "/images/projectsoft.png" alt="ProjectSoft GitHub")
 		main
 			.wrapper
-				h1
-					|ProjectSoft GitHub Pages
+				h1= title
 				.news
 					.news-container
 						each item, key in items
@@ -31,7 +30,6 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 					|Copyright &copy; 2008 - all right reserved
 				span.developer
 					|Developed by:  
-					a(href="https://github.com/" + userName + "/" target="_blank")
-						|ProjectSoft
+					a(href="https://github.com/" + userName + "/" target="_blank")= nickname
 		//- script(src="https://" + repo + "/js/plugins.js?hash=" + hash type="text/javascript")
 		script(src="https://" + repo + "/js/main.js?hash=" + hash type="text/javascript")
