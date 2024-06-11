@@ -16,6 +16,24 @@ module.exports = (grunt) => {
 	grunt.initConfig({
 		globalConfig: {},
 		pkg: pkg,
+		copy: {
+			page: {
+				files: [
+					{
+						expand: true,
+						cwd: 'src/fonts',
+						src: ['**'],
+						dest: 'docs/fonts',
+					}
+				]
+			}
+		},
+		ttf2woff2: {
+			docs: {
+				src: ["src/font/*"],
+				dest: "docs/fonts",
+			},
+		},
 		less: {
 			docs: {
 				options: {
@@ -40,7 +58,7 @@ module.exports = (grunt) => {
 			docs: {
 				files: {
 					'docs/css/main.css': [
-						//'bower_components/fancybox/dist/jquery.fancybox.css',
+						'bower_components/fancybox/dist/jquery.fancybox.css',
 						'test/css/page-main.css'
 					]
 				}
@@ -91,13 +109,17 @@ module.exports = (grunt) => {
 					},
 				},
 				files: {
-					"docs/index.html": ["src/pug/index.pug"]
+					"docs/index.html": [
+						"src/pug/index.pug"
+					]
 				},
 			},
 		},
 	});
 
 	grunt.registerTask('default', [
+		"copy",
+		"ttf2woff2",
 		"less",
 		"cssmin",
 		"concat",
