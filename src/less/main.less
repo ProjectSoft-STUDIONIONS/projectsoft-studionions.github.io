@@ -1,0 +1,55 @@
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+.clearfix {
+	&::before,
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.text {
+	&-center {
+		text-align: center;
+	}
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-justify {
+		text-align: justify;
+	}
+}
+
+html,
+body {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	pading: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	> header,
+	> main,
+	> footer {
+		width: 100%;
+		display: block;
+	}
+	> header,
+	> footer {
+		flex: 0;
+	}
+	> main {
+		flex: 1;
+		background-color: black;
+	}
+}
