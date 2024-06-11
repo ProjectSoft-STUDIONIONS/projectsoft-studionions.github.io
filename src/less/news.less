@@ -101,6 +101,7 @@
 			&:nth-child(even) {
 				.news-container-item-description {
 					p.text {
+						order: 1;
 						.btn {
 							align-self: flex-start;
 						}
@@ -108,9 +109,14 @@
 					p.photo {
 						margin-left: 30px;
 						margin-right: unset;
+						order: 2;
 					}
 				}
+				.title {
+					order: 0;
+				}
 				.date {
+					order: 1;
 					margin-right: unset;
 					margin-left: 30px;
 				}
