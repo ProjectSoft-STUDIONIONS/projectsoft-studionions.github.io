@@ -130,6 +130,8 @@ module.exports = (grunt) => {
 							"keywords": "ProjectSoft, STUDIONIONS, ProjectSoft-STUDIONIONS, Your Radio, Ваше Радио, FontMassive Pack Windows, Менеджер щрифтов Windows",
 							"description": "Страница разработчика ProjectSoft",
 							"nickname": "ProjectSoft",
+							"logotype": "projectsoft.png",
+							"copyright": "2008 - all right reserved",
 							"open_graph": {
 								"image_16x9": "image16x9.jpg",
 								"image_16x9_width": "1920",
