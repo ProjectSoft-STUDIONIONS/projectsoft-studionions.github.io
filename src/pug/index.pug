@@ -23,8 +23,8 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 					|ProjectSoft GitHub Pages
 				.news
 					.news-container
-						each val, key in items
-							include inc/radio_light.pug
+						each item, key in items
+							include inc/item.pug
 		footer
 			.wrapper
 				span.copyright

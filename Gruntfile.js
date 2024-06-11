@@ -17,14 +17,35 @@ module.exports = (grunt) => {
 	grunt.initConfig({
 		globalConfig: {},
 		pkg: pkg,
+		clean: {
+			options: {
+				force: true
+			},
+			docs: [
+				"docs/**/*",
+				'test/'
+			],
+		},
 		copy: {
-			page: {
+			docs: {
 				files: [
 					{
 						expand: true,
 						cwd: 'src/fonts',
 						src: ['**'],
 						dest: 'docs/fonts',
+					},
+					{
+						expand: true,
+						cwd: 'src/images',
+						src: ['**'],
+						dest: 'docs/images',
+					},
+					{
+						expand: true,
+						cwd: 'src',
+						src: ['*.ico', '*.png', '*.html'],
+						dest: 'docs',
 					}
 				]
 			}
@@ -69,7 +90,7 @@ module.exports = (grunt) => {
 			options: {
 				separator: ';',
 			},
-			page: {
+			docs: {
 				src: [
 					'bower_components/jquery/dist/jquery.js',
 					'bower_components/fancybox/dist/jquery.fancybox.js',
@@ -83,7 +104,7 @@ module.exports = (grunt) => {
 				compress: false,
 				//beautify: true
 			},
-			page: {
+			docs: {
 				files: {
 					'docs/js/plugins.js': [
 						'test/js/plugins.js'
@@ -97,10 +118,10 @@ module.exports = (grunt) => {
 			},
 		},
 		pug: {
-			page: {
+			docs: {
 				options: {
-					pretty: '\t',
-					separator: '\n',
+					pretty: "", //'\t',
+					separator: "", //'\n',
 					data: function(dest, src) {
 						return {
 							"hash": uniqid(),
@@ -126,6 +147,7 @@ module.exports = (grunt) => {
 		"cssmin",
 		"concat",
 		"uglify",
-		"pug"
+		"pug",
+		"clean"
 	]);
 }

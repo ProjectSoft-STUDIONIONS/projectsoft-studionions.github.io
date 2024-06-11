@@ -5,8 +5,8 @@
 	"main": "Gruntfile.js",
 	"scripts": {
 		"preinstall": "npm i -g less pug-cli bower && bower install",
-		"test": "node parseRecord.js && grunt -v",
-		"build": "node parseRecord.js && grunt"
+		"test": "npm i",
+		"build": "grunt -v"
 	},
 	"author": "ProjectSoft <projectsoft2009@yandex.ru>",
 	"license": "MIT",
