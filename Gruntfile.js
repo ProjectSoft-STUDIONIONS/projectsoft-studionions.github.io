@@ -127,7 +127,17 @@ module.exports = (grunt) => {
 							"userName": "ProjectSoft-STUDIONIONS",
 							"items": dataPug,
 							"title": "ProjectSoft | GitHub Pages",
-							"nickname": "ProjectSoft"
+							"keywords": "ProjectSoft, STUDIONIONS, ProjectSoft-STUDIONIONS, Your Radio, Ваше Радио, FontMassive Pack Windows, Менеджер щрифтов Windows",
+							"description": "Страница разработчика ProjectSoft",
+							"nickname": "ProjectSoft",
+							"open_graph": {
+								"image_16x9": "image16x9.jpg",
+								"image_16x9_width": "1920",
+								"image_16x9_height": "1080",
+								"image_1x1": "image1x1.jpg",
+								"image_1x1_width": "1080",
+								"image_1x1_height": "1080",
+							}
 						}
 					},
 				},
