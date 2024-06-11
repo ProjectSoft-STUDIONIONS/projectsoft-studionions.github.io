@@ -55,7 +55,7 @@ module.exports = (grunt) => {
 						return {
 							"hash": uniqid(),
 							"repo": "projectsoft-studionions.github.io",
-							"userSite": "projectsoft-studionions",
+							"userName": "ProjectSoft-STUDIONIONS",
 						}
 					},
 				},
