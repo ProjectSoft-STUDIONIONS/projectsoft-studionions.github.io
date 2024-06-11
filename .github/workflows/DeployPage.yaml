@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Build and Deploy static content to Pages 🛠️
 
 on:
   # Runs on pushes targeting the default branch
@@ -24,27 +24,27 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    name: Build and Deploy
+    name: Build and Deploy 🚀
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo docs
-      - name: Use Node.js ${{ matrix.node-version }}
+      - run: echo ✔️
+      - name: Use Node.js ${{ matrix.node-version }} ✔️
         uses: actions/setup-node@v4
-      - name: Build
+      - name: Build ✔️
         run: |
           npm run test
           npm run build
-      - name: Setup Pages
+      - name: Setup Pages ✔️
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: Upload artifact ✔️
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: './docs/'
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages ✔️
         id: deployment
         uses: actions/deploy-pages@v4
