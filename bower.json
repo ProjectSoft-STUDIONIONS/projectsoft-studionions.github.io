@@ -1,0 +1,17 @@
+{
+  "name": "projectsoft-studionions.github.io",
+  "description": "Главная GitHub Page",
+  "main": "Gruntfile.js",
+  "authors": [
+    "ProjectSoft <projectsoft2009@yandex.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ProjectSoft-STUDIONIONS/projectsoft-studionions.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

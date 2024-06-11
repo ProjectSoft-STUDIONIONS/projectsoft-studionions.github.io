@@ -1,0 +1,14 @@
+{
+  "name": "projectsoft-studionions.github.io",
+  "version": "1.0.0",
+  "description": "Главная GitHub Page",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ProjectSoft <projectsoft2009@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^1.6.1"
+  }
+}
