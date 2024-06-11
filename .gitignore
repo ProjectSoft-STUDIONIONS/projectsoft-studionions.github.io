@@ -3,5 +3,6 @@
 /javascripts
 /stylesheets
 /*.html
+/*-lock.json
 
 *.sublime-workspace
