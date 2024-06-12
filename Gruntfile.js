@@ -50,12 +50,12 @@ module.exports = (grunt) => {
 				]
 			}
 		},
-		ttf2woff2: {
+		/**ttf2woff2: {
 			docs: {
 				src: ["src/font/*"],
 				dest: "docs/fonts",
 			},
-		},
+		},**/
 		less: {
 			docs: {
 				options: {
@@ -66,7 +66,7 @@ module.exports = (grunt) => {
 					]
 				},
 				files: {
-					'test/css/page-main.css': [
+					'test/css/main.css': [
 						'src/less/main.less',
 					]
 				}
@@ -80,9 +80,11 @@ module.exports = (grunt) => {
 			docs: {
 				files: {
 					'docs/css/main.css': [
-						//'bower_components/fancybox/dist/jquery.fancybox.css',
-						'test/css/page-main.css'
-					]
+						'test/css/main.css'
+					],
+					'docs/css/plugins.css': [
+						'bower_components/fancybox/dist/jquery.fancybox.css'
+					],
 				}
 			}
 		},
@@ -92,8 +94,8 @@ module.exports = (grunt) => {
 			},
 			docs: {
 				src: [
-					//'bower_components/jquery/dist/jquery.js',
-					//'bower_components/fancybox/dist/jquery.fancybox.js',
+					'bower_components/jquery/dist/jquery.js',
+					'bower_components/fancybox/dist/jquery.fancybox.js',
 				],
 				dest: 'test/js/plugins.js',
 			},
@@ -106,9 +108,9 @@ module.exports = (grunt) => {
 			},
 			docs: {
 				files: {
-					/*'docs/js/plugins.js': [
+					'docs/js/plugins.js': [
 						'test/js/plugins.js'
-					],*/
+					],
 					'docs/js/main.js': [
 						'src/js/main.js'
 					]
@@ -155,10 +157,10 @@ module.exports = (grunt) => {
 	grunt.registerTask('default', [
 		"clean",
 		"copy",
-		"ttf2woff2",
+		//"ttf2woff2",
+		"concat",
 		"less",
 		"cssmin",
-		//"concat",
 		"uglify",
 		"pug",
 	]);
