@@ -40,5 +40,11 @@
 		"title": "EvoFileManagerDialog",
 		"image": "evofilemanagerdialog-400.png",
 		"description": "Плагин открытия файлменеджера не в новом окне браузера, а во всплывающем окне админки Evolution CMS."
+	},
+	{
+		"repo": "RemoveEmptyDirs",
+		"title": "Плагин Evolution CMS для очистки директорий images, files, media от пустых субдиректорий",
+		"image": "evofilemanagerdialog-400.png",
+		"description": "Плагин Evolution CMS для очистки директорий images, files, media от пустых субдиректорий"
 	}
 ]
