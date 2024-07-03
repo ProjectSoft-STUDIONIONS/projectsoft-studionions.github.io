@@ -36,6 +36,12 @@
 		"description": "Вывод контента любой страницы из, например, скрытого раздела разработчика, где страницы для редактирования доступны только вам."
 	},
 	{
+		"repo": "tweaksWindows",
+		"title": "tweaksWindows",
+		"image": "tweaksWindows-400.png",
+		"description": "В Windows уже очень давно есть функционал, который добавляет к файлу информацию о его происхождении. Если вы получаете (скачиваете) файл с Интернета, то он как бы блокируется системой."
+	},
+	{
 		"repo": "evoFileManagerDialog",
 		"title": "EvoFileManagerDialog",
 		"image": "evofilemanagerdialog-400.png",
@@ -43,8 +49,20 @@
 	},
 	{
 		"repo": "RemoveEmptyDirs",
-		"title": "Плагин Evolution CMS для очистки директорий images, files, media от пустых субдиректорий",
+		"title": "RemoveEmptyDirs",
 		"image": "evofilemanagerdialog-400.png",
 		"description": "Плагин Evolution CMS для очистки директорий images, files, media от пустых субдиректорий"
+	},
+	{
+		"repo": "PhotoShop-Bootstrap-Grid-System",
+		"title": "PhotoShop-Bootstrap-Grid-System",
+		"image": "PhotoShop-Bootstrap-Grid-System-400.png",
+		"description": "Скрипт генератор сетки Bootstarp для PhotoShop."
+	},
+	{
+		"repo": "Adobe-Illustrator-Bootstrap-Grid-System",
+		"title": "Adobe-Illustrator-Bootstrap-Grid-System",
+		"image": "Adobe-Illustrator-Bootstrap-Grid-System-400.png",
+		"description": "Скрипт генератор сетки Bootstarp для Adobe Illustrator."
 	}
 ]
