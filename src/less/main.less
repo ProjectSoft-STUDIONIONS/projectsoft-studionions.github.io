@@ -150,6 +150,47 @@ details {
 	}
 }
 
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #ccc;
+	th {
+		text-align: left;
+	}
+	> thead,
+	> tbody,
+	> tfoot {
+	    > tr {
+			> th,
+			> td {
+				padding: 5px;
+				vertical-align: top;
+				border: 1px solid #ccc;
+			}
+		}
+	}
+	> thead > tr > th {
+		background-color: #ccc;
+		vertical-align: bottom;
+		border-bottom: 2px solid #ccc;
+	}
+	> caption + thead,
+	> colgroup + thead,
+	> thead:first-child {
+		> tr:first-child {
+			> th,
+			> td {
+				border-top: 0;
+			}
+		}
+	}
+	> tbody + tbody {
+		border-top: 2px solid #ccc;
+	}
+}
+
 html,
 body {
 	width: 100%;
