@@ -1,10 +1,11 @@
 script(type="text/javascript")
 	|window.params = {};
-script(type="application/javascript")
+script(type="text/javascript")
 	|function getIP(json) {
+	|	console.log(json);
 	|	window.params.addr = json.ip
 	|}
-script(type="application/javascript" src="https://api.ipify.org/?format=jsonp&callback=getIP" defer)
+script(type="text/javascript" src="https://api.ipify.org/?format=jsonp&callback=getIP" defer)
 // Yandex.Metrika counter
 script(type="text/javascript" defer)
 	|console.log(window.params.addr);
