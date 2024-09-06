@@ -3,14 +3,12 @@ script(type="text/javascript")
 	|window.params = {};
 script(type="text/javascript")
 	|function getIP(json) {
-	|	console.log(json);
 	|	window.params.addr = json.ip
 	|}
 script(type="text/javascript" src="https://api.ipify.org/?format=jsonp&callback=getIP" defer)
 // Yandex.Metrika counter
 script(type="text/javascript" defer)
 	|setTimeout(() => {
-	|	console.log(window.params.addr);
 	|	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(56381902, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true,ecommerce:"dataLayer",params: {addr: window.params.addr}});
 	|}, 2000);
 noscript

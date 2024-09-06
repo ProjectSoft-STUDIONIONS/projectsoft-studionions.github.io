@@ -5,5 +5,22 @@
 			"name": "ProjectSoft GitHub Pages",
 			"path": "."
 		}
-	]
+	],
+	"build_systems":
+	[
+		{
+			"name": "Build Project",
+			"working_dir": "$project_path",
+			"shell_cmd": "npm run build && echo Finish Build Project",
+			"file_patterns": [
+				"*.less",
+				"*.js",
+				"*.pug"
+			]
+		}
+	],
+	"settings":  {
+		"font_size": 12,
+		"tab_size": 4
+	}
 }

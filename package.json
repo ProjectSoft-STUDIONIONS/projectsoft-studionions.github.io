@@ -6,7 +6,7 @@
 	"scripts": {
 		"preinstall": "npm i -g less pug-cli bower && bower install",
 		"test": "npm i",
-		"build": "grunt -v"
+		"build": "grunt"
 	},
 	"author": "ProjectSoft <projectsoft2009@yandex.ru>",
 	"license": "MIT",
