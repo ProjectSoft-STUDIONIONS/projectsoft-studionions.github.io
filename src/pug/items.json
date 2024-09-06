@@ -1,5 +1,11 @@
 [
 	{
+		"repo": "heic2-jpg-png",
+		"title": "Конвертор heic в jpg или png",
+		"image": "heic2-jpg-png.thumb.screen.png",
+		"description": "Приложение для конвертирования heic изображений в изображения jpg или png."
+	},
+	{
 		"repo": "radioApp-lite",
 		"title": "Your Radio Light | Ваше Радио (облегчённая версия)",
 		"image": "radio-light.thumb.screen.png",
