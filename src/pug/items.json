@@ -3,7 +3,8 @@
 		"repo": "rutube-downloader",
 		"title": "Скачивание видео с RuTube.ru, VkVideo.ru, OK.ru, Aser.pro",
 		"image": "rutube-downloader.png",
-		"description": "На данный момент поддерживаются rutube.ru, vkvideo.ru, ok.ru, aser.pro"
+		"description": "На данный момент поддерживаются rutube.ru, vkvideo.ru, ok.ru, aser.pro",
+		"link": "https://github.com/ProjectSoft-STUDIONIONS/rutube-downloader"
 	},
 	{
 		"repo": "heic2-jpg-png",
@@ -51,7 +52,8 @@
 		"repo": "tweaksWindows",
 		"title": "tweaksWindows",
 		"image": "tweaksWindows-400.png",
-		"description": "В Windows уже очень давно есть функционал, который добавляет к файлу информацию о его происхождении. Если вы получаете (скачиваете) файл с Интернета, то он как бы блокируется системой."
+		"description": "В Windows уже очень давно есть функционал, который добавляет к файлу информацию о его происхождении. Если вы получаете (скачиваете) файл с Интернета, то он как бы блокируется системой.",
+		"link": "https://github.com/ProjectSoft-STUDIONIONS/tweaksWindows"
 	},
 	{
 		"repo": "evoFileManagerDialog",
@@ -63,7 +65,8 @@
 		"repo": "RemoveEmptyDirs",
 		"title": "RemoveEmptyDirs",
 		"image": "evofilemanagerdialog-400.png",
-		"description": "Плагин Evolution CMS для очистки директорий images, files, media от пустых субдиректорий"
+		"description": "Плагин Evolution CMS для очистки директорий images, files, media от пустых субдиректорий",
+		"link": "https://github.com/ProjectSoft-STUDIONIONS/RemoveEmptyDirs"
 	},
 	{
 		"repo": "PhotoShop-Bootstrap-Grid-System",

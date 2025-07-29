@@ -1,7 +1,10 @@
 //- https://projectsoft-studionions.github.io/radioApp-lite/
 article.news-container-item
 	h4.title
-		a(href="https://" + repo + "/" + item.repo + "/")= item.title
+		if item.link
+			a(href=item.link target="_blank")= item.title
+		else
+			a(href="https://" + repo + "/" + item.repo + "/")= item.title
 	p.date
 		a(href="https://github.com/" + userName + "/" + item.repo + "/releases/latest" target="_blank")
 			img(src="https://img.shields.io/github/v/release/" + userName + "/" + item.repo + "?style=for-the-badge&color=%23007ec6&" alt="Github Latest " + item.repo + "")
@@ -9,8 +12,15 @@ article.news-container-item
 			img(src="https://img.shields.io/github/repo-size/" + userName + "/" + item.repo + ".svg?style=for-the-badge&color=%23007ec6" alt="Github Repo " + item.repo + "")
 	.news-container-item-description
 		p.photo
-			a(href="https://projectsoft-studionions.github.io/" + item.repo + "/")
-				img(src="https://" + repo + "/images/" + item.image + "" alt=item.title)
+			if item.link
+				a(href=item.link target="_blank")
+					img(src="https://" + repo + "/images/" + item.image + "" alt=item.title)
+			else
+				a(href="https://projectsoft-studionions.github.io/" + item.repo + "/" target="_blank")
+					img(src="https://" + repo + "/images/" + item.image + "" alt=item.title)
 		p.text
 			span.text-wrapper= item.description
-			a.btn.more(href="https://" + repo + "/" + item.repo + "/") Подробнее
+			if item.link
+				a(href=item.link target="_blank")= item.title
+			else
+				a.btn.more(href="https://" + repo + "/" + item.repo + "/" target="_blank") Подробнее
