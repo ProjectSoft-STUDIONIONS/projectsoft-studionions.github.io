@@ -1,5 +1,11 @@
 [
 	{
+		"repo": "rutube-downloader",
+		"title": "Скачивание видео с RuTube.ru, VkVideo.ru, OK.ru, Aser.pro",
+		"image": "rutube-downloader.png",
+		"description": "На данный момент поддерживаются rutube.ru, vkvideo.ru, ok.ru, aser.pro"
+	},
+	{
 		"repo": "heic2-jpg-png",
 		"title": "Конвертор heic в jpg или png",
 		"image": "heic2-jpg-png.thumb.screen.png",

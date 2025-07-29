@@ -27,6 +27,6 @@
 		"less-plugin-clean-css": "latest",
 		"load-grunt-tasks": "latest",
 		"time-grunt": "github:ProjectSoft-STUDIONIONS/time-grunt",
-		"ttf2woff2": "latest"
+		"ttf2woff2": "4.0.5"
 	}
 }
