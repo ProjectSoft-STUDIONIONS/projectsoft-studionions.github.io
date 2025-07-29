@@ -1,26 +1,16 @@
 //- https://projectsoft-studionions.github.io/radioApp-lite/
 article.news-container-item
 	h4.title
-		if item.link
-			a(href=item.link target="_blank")= item.title
-		else
-			a(href="https://" + repo + "/" + item.repo + "/")= item.title
+		a(href=item.link ? item.link : "https://" + repo + "/" + item.repo + "/" target=item.link ? "_blank" : "_self")= item.title
 	p.date
-		a(href="https://github.com/" + userName + "/" + item.repo + "/releases/latest" target="_blank")
+		a(href="https://github.com/" + userName + "/" + item.repo + "/releases/latest" target=item.link ? "_blank" : "_self")
 			img(src="https://img.shields.io/github/v/release/" + userName + "/" + item.repo + "?style=for-the-badge&color=%23007ec6&" alt="Github Latest " + item.repo + "")
-		a(href="https://github.com/" + userName + "/" + item.repo + "/" target="_blank")
+		a(href="https://github.com/" + userName + "/" + item.repo + "/" target=item.link ? "_blank" : "_self")
 			img(src="https://img.shields.io/github/repo-size/" + userName + "/" + item.repo + ".svg?style=for-the-badge&color=%23007ec6" alt="Github Repo " + item.repo + "")
 	.news-container-item-description
 		p.photo
-			if item.link
-				a(href=item.link target="_blank")
-					img(src="https://" + repo + "/images/" + item.image + "" alt=item.title)
-			else
-				a(href="https://projectsoft-studionions.github.io/" + item.repo + "/" target="_blank")
-					img(src="https://" + repo + "/images/" + item.image + "" alt=item.title)
+			a(href=item.link ? item.link : "https://projectsoft-studionions.github.io/" + item.repo + "/" target=item.link ? "_blank" : "_self")
+				img(src="https://" + repo + "/images/" + item.image + "" alt=item.title)
 		p.text
 			span.text-wrapper= item.description
-			if item.link
-				a(href=item.link target="_blank")= item.title
-			else
-				a.btn.more(href="https://" + repo + "/" + item.repo + "/" target="_blank") Подробнее
+			a.btn.more(href=item.link ? item.link : "https://projectsoft-studionions.github.io/" + item.repo + "/" target=item.link ? "_blank" : "_self")= Подробнее
