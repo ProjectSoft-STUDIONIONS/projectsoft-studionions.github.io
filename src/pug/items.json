@@ -1,5 +1,25 @@
 [
 	{
+		"repo": "com_food",
+		"title": "Компонент «ПИТАНИЕ» Joomla CMS",
+		"image": "com_food.png",
+		"description": "Компонент com_food для Joomla CMS Обслуживания директории food сайта школы. Актуально для сайтов школ РФ. Предназначен для использования в административной панели Joomla."
+	},
+	{
+		"repo": "food-uploader-plugin",
+		"title": "WordPress Плагин загрузки файлов меню ежедневного питания",
+		"image": "food-uploader-plugin.png",
+		"description": "WordPress Плагин для загрузки файлов xlsx или pdf в папку /food/, доступен только администраторам. Плагин актуален для сайтов школ России.",
+		"link": "https://github.com/ProjectSoft-STUDIONIONS/food-uploader-plugin"
+	},
+	{
+		"repo": "food-module",
+		"title": "Модуль (Evolution CMS 1.4.x) загрузки файлов меню ежедневного питания",
+		"image": "food-module.png",
+		"description": "Модуль для Редакторов, у которых нет доступа к файлменеджеру административной панели (запрещён в настройках роли). Модуль актуален для сайтов школ России.",
+		"link": "https://github.com/ProjectSoft-STUDIONIONS/food-module"
+	},
+	{
 		"repo": "rutube-downloader",
 		"title": "Скачивание видео с RuTube.ru, VkVideo.ru, OK.ru, Aser.pro",
 		"image": "rutube-downloader.png",
